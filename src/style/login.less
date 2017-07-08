@@ -1,0 +1,95 @@
+.login
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../image/background.png) no-repeat;
+    background-size: 100% 100%;;
+    form
+    {
+        .mt(260);
+        .ng-invalid {
+            &+span {
+            position: absolute;
+            color: @dangerColor;
+            right: 0;
+            height: 100%;
+            text-align: right;
+            .fs(12);
+            p {
+              margin: 0;
+            }
+          }
+        }
+        .form-line
+        {
+            font-size: 0;
+            box-sizing: content-box;
+            margin-right: auto;
+            margin-left: auto;
+            color: @defaultColor;
+            .w(300);
+            .h(40);
+            .lh(40);
+            &:first-child
+            {
+                border-bottom: 1px solid @defaultColor;
+            }
+            span.icon
+            {
+                height: 100%;
+                background-color: @iconBgColor;
+                background-repeat: no-repeat;
+                background-position: 20px 10px;
+                .w(55);
+            }
+            .account
+            {
+                background-image: url(../image/account.png);
+            }
+            .lock
+            {
+                background-image: url(../image/lock.png);
+            }
+            input
+            {
+                box-sizing: border-box;
+                height: 100%;
+                color: @defaultColor;
+                border-width: 0;
+                outline-width: 0;
+                background-color: @formBgColor;
+                .w(245);
+                .fs(14);
+                .pl(30);
+                &::-webkit-input-placeholder
+                {
+                    color: @defaultColor;
+                }
+            }
+        }
+        button
+        {
+            font-weight: bold;
+            .w(300);
+            .h(35);
+            .lh(35);
+            .fs(22);
+            &.login-btn
+            {
+                color: @defaultColor;
+                background: @headBgColor;
+                .mt(75);
+            }
+            &.register-btn
+            {
+                color: @headBgColor;
+                border: 1px solid @headBgColor;
+                background: @btnBgColor;
+                .mt(20);
+            }
+        }
+    }
+}

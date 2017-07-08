@@ -1,0 +1,58 @@
+.me
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../image/background.png) no-repeat;
+    background-size: 100% 100%;;
+    img
+    {
+        margin-right: auto;
+        margin-left: auto;
+        .mt(60);
+    }
+    .name
+    {
+        .mt(25);
+        color: #F08080;
+    }
+    .btns
+    {
+        .mt(40);
+        button
+        {
+            color: @defaultColor;
+            background: @headBgColor;
+            .fs(16);
+            .w(150);
+            .h(95);
+            .mr(12);
+            .ml(12);
+            &.logout
+            {
+                background: @dangerColor;
+                .w(340);
+                .h(40);
+                .mt(20);
+            }
+        }
+    }
+    .login-btn {
+        background-color: @headBgColor;
+        color: @defaultColor;
+        .fs(18);
+        .w(340);
+        .h(40);
+        .mt(50);
+    }
+    .logo {
+        background: url(../image/logo.png) no-repeat;
+        .w(194);
+        .h(68);
+        margin-left: auto;
+        margin-right: auto;
+        .mt(200);
+    }
+}

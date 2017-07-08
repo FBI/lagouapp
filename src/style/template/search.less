@@ -1,0 +1,46 @@
+.search-bar
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: @headBgColor;
+    .h(40);
+    .lh(40);
+    img
+    {
+        transform: scale(.8);
+    }
+    button
+    {
+        background-color: @headBgColor;
+        &:first-child
+        {
+            //第一个button字体颜色
+            color: @defaultColor;
+        }
+        &:last-child
+        {
+            margin-left: 10px;
+            padding-left: 18px;
+            //最后一个button的字体颜色
+            color: @muteColor;
+            background: url(../image/search.png) no-repeat 0 4px;
+            background-size: 15px 15px;
+        }
+    }
+    input
+    {
+        box-sizing: border-box;
+        border-style: none;
+        border-radius: 80px;
+        outline-width: 0;
+        background-color: @bodyBgColor;
+        .pl(20);
+        .h(25);
+        .w(190);
+    }
+}
+.search-list {
+    .mt(85);
+}

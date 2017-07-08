@@ -1,0 +1,9 @@
+<div class="search-bar ta-c">
+	<button ng-click="name='';search()">取消</button>
+	<input type="text" ng-model="name" placeholder="搜索职位/公司/城市">
+	<button class="ta-l" ng-click="search()">搜索</button>
+</div>
+<div app-tab list="tabList" tab-click="tClick(id,name)"></div>
+<div app-position-list data="positionList" class="search-list" filter-obj="filterObj"></div>
+<div app-foot></div>
+<divp app-sheet list="sheet.list" visible="sheet.visible" select="sClick(id,name)"></divp>

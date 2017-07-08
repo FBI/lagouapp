@@ -1,0 +1,33 @@
+@import '../variable.less';
+
+.head {
+	background-color : @headBgColor;
+	.h(50);
+	.lh(50);
+	padding : 0 7px;
+	.text {
+		color : @defaultColor;
+		font-style: italic;
+	}
+	.custom {
+		color : @defaultColor;
+		border-color : @warnColor;
+		border-style : dashed;
+		font-weight: bold;
+		text-shadow:#000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+		-webkit-text-shadow:#000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+		-moz-text-shadow:#000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+		background-color : @warnColor;
+		.h(20);
+		.mt(15);
+		.lh(20);
+		.pl(15);
+		.pr(15);
+		vertical-align: middle;
+	}
+	.back-btn {
+		font-size: 20px;
+		width: 1rem;
+		left: 0;
+	}
+}

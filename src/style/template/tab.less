@@ -1,0 +1,24 @@
+.tab
+{
+    font-size: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: @bodyBgColor;
+    .mt(40);
+    li
+    {
+        width: 33.33%;
+        border-bottom: 2px solid @tabBgColor;
+        .fs(14);
+        .h(40);
+        .lh(40);
+        &.active
+        {
+           border-bottom: 2px solid @headBgColor;
+        }
+    }
+}

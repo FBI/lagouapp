@@ -1,0 +1,15 @@
+.foot {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  font-size: 0;
+}
+.foot li {
+  font-size: 20px;
+  width: 33%;
+  @foot Color;
+}
